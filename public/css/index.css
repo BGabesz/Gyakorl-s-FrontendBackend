@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.tablazat table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tablazat td, .tablazat th {
+    text-align: left;
+    padding: 8px;
+  }
+.tablazat tr:nth-child(even){
+    background-color: #acacac;
+}
+.osztalyValaszt, .tevekenysegValaszt,.kuld{
+width: 100%;
+}
+    fieldset{
+    display: grid;
+    grid-template-columns: 4fr 4fr 1fr;
+}
+.chart {
+    width: 100%; 
+    min-height: 450px;
+  }
+
+@media screen and (max-width: 510px) {
+    fieldset{
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .osztalyValaszt, .tevekenysegValaszt, .kuld{
+        width: 100%;
+        margin:3px
+    }
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+    }
+      .tablazat th{
+          display: none;
+      }
+  }
